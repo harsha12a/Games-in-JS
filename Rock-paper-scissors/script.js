@@ -7,12 +7,15 @@ const res = document.getElementById("res");
 const sub = document.getElementById("sub");
 rock.onclick = function() {
     user.src = rock.src;
+    comp.src="";
 };
 paper.onclick = function() {
     user.src = paper.src;
+    comp.src="";
 };
 scissor.onclick = function() {
     user.src = scissor.src;
+    comp.src="";
 };
 function getrandom(arr, prevIndex) {
     let i;
