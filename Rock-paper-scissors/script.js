@@ -4,6 +4,7 @@ const scissor=document.getElementById("scissor")
 const user=document.getElementById("user")
 const comp=document.getElementById("comp")
 const res=document.getElementById("res")
+const sub=document.getElementById("sub")
 rock.onclick=function(){
     user.src=rock.src
 }
@@ -18,7 +19,7 @@ function getrandom(arr){
     return arr[i]
 }
 var score=0
-onkeypress=function(){
+sub.onclick=function(){
     res.textContent=""
     const arr=[rock,paper,scissor]
     comp.src=getrandom(arr).src
